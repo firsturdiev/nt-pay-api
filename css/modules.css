@@ -1,9 +1,127 @@
+/* Bismillohir Rahmonir Rahiym */
+
 /* VARIABLES */
 
 :root {
+  --color-primary-pink-dark: #ba4270;
+  --color-primary-white: #fbfcfe;
+  --color-secondary-blue-san-juan: #36536b;
+  --color-secondary-blue-mirage: #1b262f;
+  --color-secondary-pink-charm: #da6d97;
+  --color-secondary-light-san-juan-blue: #6c8294;
 }
 
 /* REUSABLES */
+
+.heading {
+  font-family: "DM Serif Display", "Times New Roman", Times, serif;
+  color: #36536b;
+}
+
+.heading--primary {
+  font-size: 56px;
+  line-height: 1;
+  letter-spacing: -0.43px;
+}
+
+.heading--secondary {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.37px;
+}
+
+.heading--tertiary {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.25px;
+}
+
+.heading--quaternary {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+}
+
+.btn {
+  display: block;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: -0.12px;
+  border: none;
+  border-radius: 24px;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+}
+
+.btn--disabled,
+.btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.btn--primary {
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-pink-dark);
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-secondary-pink-charm);
+}
+
+.btn--secondary--light {
+  color: var(--color-primary-white);
+  background-color: transparent;
+  border: 1px solid var(--color-primary-white);
+}
+
+.btn--secondary--light:hover {
+  color: var(--color-secondary-blue-mirage);
+  background-color: var(--color-primary-white);
+}
+
+.btn--secondary--dark {
+  color: var(--color-secondary-blue-san-juan);
+  background-color: transparent;
+  border: 1px solid var(--color-secondary-blue-san-juan);
+}
+
+.btn--secondary--dark:hover {
+  color: var(--color-primary-white);
+  background-color: var(--color-secondary-blue-san-juan);
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Regular.woff2") format("woff2"),
+    url("../fonts/PublicSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Bold.woff2") format("woff2"),
+    url("../fonts/PublicSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  src: url("../fonts/DMSerifDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/DMSerifDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* DEFAULT STYLES */
 
@@ -20,6 +138,11 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: "Public Sans", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6c8294;
+  background-color: #edf3f8;
 }
 
 img {
@@ -50,9 +173,9 @@ body {
 /* SPECIAL CLASSES */
 
 .container {
-  max-width: 1160px;
+  max-width: 1110px;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 0 24px;
 }
 
 .visually-hidden {

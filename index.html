@@ -1,3 +1,5 @@
+<!-- Bismillohir Rahmonir Rahiym -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,11 +8,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
   <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/modules.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
+  <!-- SITE-HEADER -->
 
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <a class="logo" href="./" aria-label="Home">
+          <img src="./img/logo.svg" width="134" height="37" alt="PayAPI logo">
+        </a>
+
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Pricing</a>
+            </li>
+
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">About</a>
+            </li>
+
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <a class="btn btn--primary" href="#">Schedule a Demo</a>
+        </nav>
+
+        <!-- mobile menu -->
+
+        <nav class="menu">
+            <div class="menu__close">
+              <button class="menu__close-btn" aria-label="Close menu"></button>
+            </div>
+
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Pricing</a>
+              </li>
+
+              <li class="menu__item">
+                <a class="menu__link" href="#">About</a>
+              </li>
+
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <a class="btn btn--primary" href="#">Schedule a Demo</a>
+        </nav>
+
+        <div class="menu-fake"></div>
+
+        <button class="menu-toggle" type="button" aria-label="Menu toggle"></button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- SITE-CONTENT -->
+
+  <main class="site-content"></main>
+
+
+  <!-- SITE-FOOTER -->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner"></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
