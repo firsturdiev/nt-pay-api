@@ -3,6 +3,10 @@
 @media screen and (min-width: 768px) {
   /* SITE-HEADER */
 
+  .site-header {
+    padding-bottom: 48px;
+  }
+
   .logo {
     margin-right: 64px;
   }
@@ -36,15 +40,111 @@
     font-weight: bold;
     color: rgba(54, 83, 107, 0.7);
   }
+
+  /* HERO */
+
+  .hero {
+    padding: 0 60px;
+    padding-bottom: 100px;
+  }
+
+  .hero__inner::before {
+    width: 159px;
+    height: 300px;
+    margin-bottom: 48px;
+    background-image: url("../img/bg-hero-tablet.png");
+  }
+
+  .hero__heading {
+    margin-bottom: 22px;
+  }
+
+  .hero__email-form {
+    margin-bottom: 16px;
+  }
+
+  /* RETINA IMAGES */
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    .hero::before {
+      background-image: url("../img/bg-hero-tablet@2x.png");
+    }
+  }
 }
 
 /* ADDITIONALS */
 
 @media screen and (min-width: 650px) {
   .site-header::after {
+    z-index: -1;
     top: -663px;
     width: 950px;
     height: 950px;
+  }
+
+  .clients {
+    padding: 88px 92px;
+  }
+
+  .clients__list {
+    margin-bottom: 64px;
+    padding: 0;
+  }
+
+  .client {
+    width: calc(100% / 3 - 25px);
+  }
+
+  .client:nth-child(n + 3) {
+    justify-content: flex-start;
+  }
+
+  .client:nth-child(2n + 3) {
+    justify-content: center;
+  }
+
+  .client:nth-child(3n + 3) {
+    justify-content: flex-end;
+  }
+
+  .client--tesla .client__logo {
+    width: 129px;
+    height: 17px;
+  }
+
+  .client--microsoft .client__logo {
+    width: 145px;
+    height: 31px;
+  }
+
+  .client--hp .client__logo {
+    width: 140px;
+    height: 27px;
+  }
+
+  .client--oracle .client__logo {
+    width: 131px;
+    height: 17px;
+  }
+
+  .client--google .client__logo {
+    width: 96px;
+    height: 33px;
+  }
+
+  .client--nvidia .client__logo {
+    width: 137px;
+    height: 26px;
+  }
+
+  .clients__text {
+    padding: 0 23px;
   }
 }
 
@@ -61,6 +161,10 @@
 @media screen and (min-width: 1000px) {
   /* SITE-HEADER */
 
+  .site-header {
+    padding-bottom: 74px;
+  }
+
   .site-header::after {
     top: -172px;
     right: -140px;
@@ -70,6 +174,86 @@
     background: none;
     background-color: rgba(54, 83, 107, 0.15);
     border-radius: 50%;
+  }
+
+  /* HERO */
+
+  .hero {
+    padding: 0;
+    padding-bottom: 75px;
+    padding-right: 95px;
+    text-align: left;
+  }
+
+  .hero__inner {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .hero__inner::before {
+    width: 263px;
+    height: 500px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    margin-right: 60px;
+    background-image: url("../img/bg-hero-desktop.png");
+  }
+
+  .hero__content {
+    margin-right: 206px;
+  }
+
+  .hero__heading {
+    margin-bottom: 60px;
+    font-size: 72px;
+    letter-spacing: -0.55px;
+  }
+
+  .hero__tip {
+    padding-left: 27px;
+  }
+
+  .hero__tip-link:hover {
+    text-decoration: underline;
+  }
+
+  /* CLIENTS */
+
+  .clients {
+    padding: 100px 0;
+    text-align: left;
+  }
+
+  .clients::before {
+    top: -330px;
+    left: calc(50% - 565px);
+  }
+
+  .clients__inner {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .clients__text {
+    max-width: 445px;
+    margin-right: 131px;
+    padding: 0;
+  }
+
+  /* RETINA IMAGES */
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    .hero::before {
+      background-image: url("../img/bg-hero-desktop@2x.png");
+    }
   }
 }
 

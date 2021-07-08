@@ -44,25 +44,25 @@
         <!-- mobile menu -->
 
         <nav class="menu">
-            <div class="menu__close">
-              <button class="menu__close-btn" aria-label="Close menu"></button>
-            </div>
+          <div class="menu__close">
+            <button class="menu__close-btn" aria-label="Close menu"></button>
+          </div>
 
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="#">Pricing</a>
-              </li>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Pricing</a>
+            </li>
 
-              <li class="menu__item">
-                <a class="menu__link" href="#">About</a>
-              </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">About</a>
+            </li>
 
-              <li class="menu__item">
-                <a class="menu__link" href="#">Contact</a>
-              </li>
-            </ul>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
+            </li>
+          </ul>
 
-            <a class="btn btn--primary" href="#">Schedule a Demo</a>
+          <a class="btn btn--primary" href="#">Schedule a Demo</a>
         </nav>
 
         <div class="menu-fake"></div>
@@ -75,7 +75,75 @@
 
   <!-- SITE-CONTENT -->
 
-  <main class="site-content"></main>
+  <main class="site-content">
+    <!-- HERO -->
+
+    <div class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__heading heading heading--primary">Start building with our APIs for absolutely free.</h1>
+            <form class="hero__email-form email-form" action="https://echo.htmlacademy.ru" method="POST">
+              <input class="email-form__input" type="email" placeholder="Enter email address" name="email" minlength="5"
+                aria-label="Email address" required>
+              <button class="email-form__btn btn btn--primary" type="submit">Schedule a Demo</button>
+            </form>
+            <p class="hero__tip">Have any questions? <a class="hero__tip-link" href="#">Contact Us</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- CLIENTS -->
+
+    <section class="clients">
+      <div class="container">
+        <div class="clients__inner">
+          <ul class="clients__list">
+            <li class="clients__item client client--tesla">
+              <img class="client__logo" src="./img/logo-tesla.png" width="106" height="14"
+                srcset="./img/logo-tesla@2x.png 2x" alt="Logo of Tesla">
+            </li>
+
+            <li class="clients__item client client--microsoft">
+              <img class="client__logo" src="./img/logo-microsoft.png" width="119" height="26"
+                srcset="./img/logo-microsoft@2x.png 2x" alt="Logo of Microsoft">
+            </li>
+
+            <li class="clients__item client client--hp">
+              <img class="client__logo" src="./img/logo-hp.png" width="115" height="22" srcset="./img/logo-hp@2x.png 2x"
+                alt="Logo of HP">
+            </li>
+
+            <li class="clients__item client client--oracle">
+              <img class="client__logo" src="./img/logo-oracle.png" width="108" height="14"
+                srcset="./img/logo-oracle@2x.png 2x" alt="Logo of Oracle">
+            </li>
+
+            <li class="clients__item client client--google">
+              <img class="client__logo" src="./img/logo-google.png" width="79" height="27"
+                srcset="./img/logo-google@2x.png 2x" alt="Logo of Google">
+            </li>
+
+            <li class="clients__item client client--nvidia">
+              <img class="client__logo" src="./img/logo-nvidia.png" width="113" height="21"
+                srcset="./img/logo-nvidia@2x.png 2x" alt="Logo of Nvidia">
+            </li>
+          </ul>
+
+          <div class="clients__text">
+            <h2 class="clients__heading heading heading--secondary">Who we work with</h2>
+            <p class="clients__paragraph">Today, millions of people around the world have successfully connected their
+              accounts to apps they love using our API. We provide developers with the tools they need to create easy
+              and
+              accessible experiences for their users. </p>
+            <a class="btn btn--secondary--light" href="#">About Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
 
   <!-- SITE-FOOTER -->
