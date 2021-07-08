@@ -130,6 +130,11 @@
     padding: 31px 0;
   }
 
+  .site-footer::after {
+    top: -136px;
+    left: calc(50% + 384px);
+  }
+
   .site-footer__inner {
     flex-direction: row;
   }
@@ -434,6 +439,12 @@
 
   .cta__email-form {
     flex-shrink: 0;
+  }
+
+  /* SITE-FOOTER */
+
+  .site-footer::after {
+    left: calc(50% + 720px);
   }
 
   /* RETINA IMAGES */
