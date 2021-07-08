@@ -276,6 +276,63 @@
   margin: 0;
 }
 
+/* SERVICES */
+
+.services {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.services__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services__item:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.service::before {
+  content: '';
+  width: 106px;
+  height: 106px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  background-color: var(--color-secondary-blue-san-juan);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.service--finances::before {
+  background-image: url('../img/bg-service-finances.svg');
+}
+
+.service--banking::before {
+  background-image: url('../img/bg-service-banking.svg');
+}
+
+.service--payments::before {
+  background-image: url('../img/bg-service-payments.svg');
+}
+
+.service__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.14px;
+  color: var(--color-secondary-blue-san-juan);
+}
+
+.service__info {
+  margin: 0;
+}
+
 /* RETINA IMAGES */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),

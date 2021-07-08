@@ -88,6 +88,31 @@
     margin-right: 26px;
   }
 
+  /* SERVICES */
+
+  .services {
+    margin-bottom: 100px;
+  }
+
+  .services__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .services__item {
+    width: calc(100% / 3 - 10px);
+  }
+
+  .services__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  .service::before {
+    width: 88px;
+    height: 88px;
+  }
+
   /* RETINA IMAGES */
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -282,7 +307,7 @@
   }
 
   .features__inner::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 294px;
     left: calc(50% + 720px);
@@ -318,12 +343,35 @@
     height: 500px;
   }
 
+  .feature__img-wrapper:not(:last-child) {
+    margin-right: 40px;
+  }
+
   .feature__top {
     margin: 0;
   }
 
   .feature__text {
     max-width: 445px;
+  }
+
+  /* SERVICES */
+
+  .services {
+    margin-bottom: 96px;
+  }
+
+  .services__item {
+    width: calc(100% / 3 - 30px);
+  }
+
+  .services__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .service::before {
+    width: 106px;
+    height: 106px;
   }
 
   /* RETINA IMAGES */
