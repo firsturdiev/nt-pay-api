@@ -37,8 +37,15 @@
   .sitenav__link {
     display: block;
     text-decoration: none;
+    font-size: 15px;
     font-weight: bold;
+    line-height: 18px;
     color: rgba(54, 83, 107, 0.7);
+    transition: color 0.3s ease;
+  }
+
+  .sitenav__link:hover {
+    color: var(--color-secondary-blue-san-juan);
   }
 
   /* HERO */
@@ -308,10 +315,6 @@
 
   .hero__tip {
     padding-left: 27px;
-  }
-
-  .hero__tip-link:hover {
-    text-decoration: underline;
   }
 
   /* CLIENTS */

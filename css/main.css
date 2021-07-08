@@ -167,6 +167,10 @@
   text-decoration: none;
 }
 
+.hero__tip-link:hover {
+  text-decoration: underline;
+}
+
 /* CLIENTS */
 
 .clients {
