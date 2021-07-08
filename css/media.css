@@ -63,6 +63,31 @@
     margin-bottom: 16px;
   }
 
+  /* FEATURES */
+
+  .features {
+    margin-bottom: 100px;
+    padding: 0 60px;
+  }
+
+  .features__item:not(:last-child) {
+    margin-bottom: 100px;
+  }
+
+  .feature--code .feature__img {
+    width: 392px;
+    height: 250px;
+  }
+
+  .feature--design .feature__img {
+    width: 168px;
+    height: 320px;
+  }
+
+  .feature__img-wrapper:not(:last-child) {
+    margin-right: 26px;
+  }
+
   /* RETINA IMAGES */
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -89,6 +114,7 @@
   }
 
   .clients {
+    margin-bottom: 100px;
     padding: 88px 92px;
   }
 
@@ -101,11 +127,11 @@
     width: calc(100% / 3 - 25px);
   }
 
-  .client:nth-child(n + 3) {
+  .client:nth-child(3n + 1) {
     justify-content: flex-start;
   }
 
-  .client:nth-child(2n + 3) {
+  .client:nth-child(3n + 2) {
     justify-content: center;
   }
 
@@ -158,7 +184,7 @@
 
 /* DESKTOP */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1110px) {
   /* SITE-HEADER */
 
   .site-header {
@@ -221,6 +247,7 @@
   /* CLIENTS */
 
   .clients {
+    margin-bottom: 150px;
     padding: 100px 0;
     text-align: left;
   }
@@ -240,6 +267,63 @@
     max-width: 445px;
     margin-right: 131px;
     padding: 0;
+  }
+
+  /* FEATURES */
+
+  .features {
+    margin-bottom: 150px;
+    text-align: left;
+    overflow-x: clip;
+  }
+
+  .features__inner {
+    position: relative;
+  }
+
+  .features__inner::after {
+    content: '';
+    position: absolute;
+    top: 294px;
+    left: calc(50% + 720px);
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 780px;
+    height: 780px;
+    background-color: rgba(54, 83, 107, 0.15);
+    border-radius: 50%;
+  }
+
+  .features__item:not(:last-child) {
+    margin-bottom: 150px;
+  }
+
+  .feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .feature:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .feature--code .feature__img {
+    width: 445px;
+    height: 284px;
+  }
+
+  .feature--design .feature__img {
+    width: 263px;
+    height: 500px;
+  }
+
+  .feature__top {
+    margin: 0;
+  }
+
+  .feature__text {
+    max-width: 445px;
   }
 
   /* RETINA IMAGES */
