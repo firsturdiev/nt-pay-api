@@ -7,7 +7,7 @@
     padding-bottom: 48px;
   }
 
-  .logo {
+  .site-header__logo {
     margin-right: 64px;
   }
 
@@ -111,6 +111,46 @@
   .service::before {
     width: 88px;
     height: 88px;
+  }
+
+  /* CTA */
+
+  .cta {
+    margin-bottom: 100px;
+    padding: 0 120px;
+  }
+
+  .cta__heading {
+    margin-bottom: 40px;
+  }
+
+  /* SITE-FOOTER */
+
+  .site-footer {
+    padding: 31px 0;
+  }
+
+  .site-footer__inner {
+    flex-direction: row;
+  }
+
+  .site-footer__logo {
+    margin-bottom: 0;
+    margin-right: 64px;
+  }
+
+  .footer-nav {
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+
+  .footer-nav__list {
+    display: flex;
+  }
+
+  .footer-nav__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 40px;
   }
 
   /* RETINA IMAGES */
@@ -297,7 +337,7 @@
   /* FEATURES */
 
   .features {
-    margin-bottom: 150px;
+    margin-bottom: 156px;
     text-align: left;
     overflow-x: clip;
   }
@@ -372,6 +412,28 @@
   .service::before {
     width: 106px;
     height: 106px;
+  }
+
+  /* CTA */
+
+  .cta {
+    margin-bottom: 96px;
+    padding: 0;
+    text-align: left;
+  }
+
+  .cta__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cta__heading {
+    margin-bottom: 0;
+  }
+
+  .cta__email-form {
+    flex-shrink: 0;
   }
 
   /* RETINA IMAGES */

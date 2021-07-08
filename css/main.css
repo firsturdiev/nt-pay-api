@@ -294,7 +294,7 @@
 }
 
 .service::before {
-  content: '';
+  content: "";
   width: 106px;
   height: 106px;
   display: block;
@@ -308,15 +308,15 @@
 }
 
 .service--finances::before {
-  background-image: url('../img/bg-service-finances.svg');
+  background-image: url("../img/bg-service-finances.svg");
 }
 
 .service--banking::before {
-  background-image: url('../img/bg-service-banking.svg');
+  background-image: url("../img/bg-service-banking.svg");
 }
 
 .service--payments::before {
-  background-image: url('../img/bg-service-payments.svg');
+  background-image: url("../img/bg-service-payments.svg");
 }
 
 .service__title {
@@ -331,6 +331,88 @@
 
 .service__info {
   margin: 0;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.12px;
+}
+
+/* CTA */
+
+.cta {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.cta__heading {
+  margin-bottom: 32px;
+}
+
+/* SITE-FOOTER */
+
+.site-footer {
+  padding-top: 42px;
+  padding-bottom: 55px;
+  text-align: center;
+  background-color: var(--color-secondary-blue-mirage);
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-footer__logo {
+  margin-bottom: 40px;
+}
+
+.footer-nav {
+  margin-bottom: 40px;
+}
+
+.footer-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-nav__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.footer-nav__link {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  height: 18px;
+  color: rgba(251, 252, 254, 0.7);
+  transition: color 0.3s ease;
+}
+
+.footer-nav__link:hover {
+  color: var(--color-primary-white);
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.social__link {
+  display: flex;
+  color: var(--color-primary-white);
+  transition: color 0.3s ease;
+}
+
+.social__link:hover {
+  color: #da6d97;
 }
 
 /* RETINA IMAGES */
