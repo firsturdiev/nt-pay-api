@@ -258,6 +258,7 @@
 .feature__top {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
   margin-bottom: 48px;
 }
@@ -459,6 +460,15 @@
   .client.client {
     width: 100%;
     justify-content: center;
+  }
+
+  .feature--design .feature__top {
+    flex-direction: column;
+  }
+
+  .feature__img-wrapper:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 24px;
   }
 }
 
